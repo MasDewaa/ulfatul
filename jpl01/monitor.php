@@ -1,17 +1,6 @@
 <?php
-// Koneksi ke database
-    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
-    $port = "4000";
-    $user = "23deaNrZSzmtKhb.root";
-    $password = "nuJVkqoA8Tyktxqb";
-    $database = "test";
-
-    $koneksi = mysqli_connect($host, $user, $password, $database, $port);
-
-// Periksa koneksi
-if (!$koneksi) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include "../service/database.php";
+    session_start();
 
 // Tentukan periode waktu berdasarkan parameter GET, default ke 'minggu'
 $periode = isset($_GET['periode']) ? $_GET['periode'] : 'minggu';
@@ -27,7 +16,7 @@ if ($periode == 'bulan') {
 // Ambil data dari database
 // Mengambil semua data untuk periode yang dipilih
 $query = "SELECT id, Arus, Baterei, Motor1, Motor2, Waktu FROM tb_jpl01 $where ORDER BY Waktu ASC"; // Order by ASC for proper chart progression
-$result = mysqli_query($koneksi, $query);
+$result = mysqli_query($db, $query);
 
 // Siapkan data untuk grafik
 $dataPoints = array();
@@ -44,8 +33,8 @@ while ($row = mysqli_fetch_assoc($result)) {
 // Encode data ke format JSON
 $json_data = json_encode($dataPoints, JSON_NUMERIC_CHECK);
 $current_periode = $periode; // Simpan nilai periode yang sedang digunakan
-// Tutup koneksi database
-mysqli_close($koneksi);
+// Tutup db database
+mysqli_close($db);
 ?>
 
 <!DOCTYPE html>

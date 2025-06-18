@@ -1,23 +1,13 @@
 <?php
-// Koneksi ke database
-    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
-    $port = "4000";
-    $user = "23deaNrZSzmtKhb.root";
-    $password = "nuJVkqoA8Tyktxqb";
-    $database = "test";
-
-    $conn = mysqli_connect($host, $user, $password, $database, $port);
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include __DIR__ . "/services/database.php";
 
 $sql = "SELECT * FROM tb_kerusakan ORDER BY Waktu DESC";
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($db, $sql);
 
 // Hitung total kerusakan bulan ini
 $bulan_ini = date('Y-m'); // Format: 2025-06
 $sql_total = "SELECT COUNT(*) AS total FROM tb_kerusakan WHERE DATE_FORMAT(Waktu, '%Y-%m') = '$bulan_ini'";
-$result_total = mysqli_query($conn, $sql_total);
+$result_total = mysqli_query($db, $sql_total);
 $data_total = mysqli_fetch_assoc($result_total);
 $total_bulan_ini = $data_total['total'];
 
@@ -241,4 +231,4 @@ $total_bulan_ini = $data_total['total'];
 </body>
 </html>
 
-<?php mysqli_close($conn); ?>
+<?php mysqli_close($db); ?>

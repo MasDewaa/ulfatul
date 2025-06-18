@@ -1,15 +1,5 @@
 <?php
-// Koneksi ke database
-    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
-    $port = "4000";
-    $user = "23deaNrZSzmtKhb.root";
-    $password = "nuJVkqoA8Tyktxqb";
-    $database = "test";
-
-    $koneksi = mysqli_connect($host, $user, $password, $database, $port);
-if (!$koneksi) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include "../service/database.php";
 
 // Ambil parameter periode
 $periode = isset($_GET['periode']) ? $_GET['periode'] : 'minggu';
@@ -24,7 +14,7 @@ if ($periode == 'bulan') {
 
 // Query data sesuai periode
 $query = "SELECT id, Arus, Baterei, Motor1, Motor2, Waktu FROM tb_jpl01 $where ORDER BY id DESC LIMIT 100";
-$result = mysqli_query($koneksi, $query);
+$result = mysqli_query($db, $query);
 
 // Simpan hasil ke array
 $dataPoints = array();

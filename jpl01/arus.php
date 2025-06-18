@@ -1,24 +1,16 @@
 <?php 
-    //koneksi ke database
-    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
-    $port = "4000";
-    $user = "23deaNrZSzmtKhb.root";
-    $password = "nuJVkqoA8Tyktxqb";
-    $database = "test";
+include "../service/database.php";
 
-    $konek = mysqli_connect($host, $user, $password, $database, $port);
+// Baca data dari tabel
+$sql = mysqli_query($db, "SELECT * FROM tb_jpl01 ORDER BY id DESC");
 
-    //baca data dari tabel
-    $sql = mysqli_query($konek, "select * from tb_jpl01 order by id desc");
+// Baca data terbaru
+$data = mysqli_fetch_array($sql);
+$Arus = $data['Arus'];
 
-    //pembacaan data terbaru
-    $data = mysqli_fetch_array($sql);
-    $Arus = $data['Arus'];
+// Beri nilai 0 jika kosong
+if ($Arus == "") $Arus = 0;
 
-    //pemberian nilai 0 jika tidak terdeteksi tegangan
-    if($Arus == "") $Arus = 0 ;
-
-    //cetak tegangan charger
-    echo $Arus ;
-
+// Cetak Arus
+echo $Arus;
 ?>
