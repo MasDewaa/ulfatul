@@ -1,11 +1,11 @@
 <?php
-$server = "localhost";
-$user = "root";
-$password = "1234";
-$db_name = "db_ta";
+    $server = "gateway01.us-west-2.prod.aws.tidbcloud.com";
+    $port = "4000";
+    $user = "23deaNrZSzmtKhb.root";
+    $password = "nuJVkqoA8Tyktxqb";
+    $db_name = "test";
 
-$db = new mysqli($server, $user, $password, $db_name);
-
+    $db = mysqli_connect($server, $user, $password, $db_name, $port);
 if ($db->connect_error) {
     die("Koneksi database gagal: " . $db->connect_error);
 }

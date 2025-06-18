@@ -1,6 +1,12 @@
 <?php 
     //koneksi ke database
-    $konek = mysqli_connect ("localhost","root","","db_ta");
+    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
+    $port = "4000";
+    $user = "23deaNrZSzmtKhb.root";
+    $password = "nuJVkqoA8Tyktxqb";
+    $database = "test";
+
+    $konek = mysqli_connect($host, $user, $password, $database, $port);
 
     //baca data dari tabel
     $sql = mysqli_query($konek, "select * from tb_jpl01 order by id desc");

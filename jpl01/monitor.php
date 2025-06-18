@@ -1,6 +1,12 @@
 <?php
 // Koneksi ke database
-$koneksi = mysqli_connect("localhost", "root", "", "db_ta");
+    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
+    $port = "4000";
+    $user = "23deaNrZSzmtKhb.root";
+    $password = "nuJVkqoA8Tyktxqb";
+    $database = "test";
+
+    $koneksi = mysqli_connect($host, $user, $password, $database, $port);
 
 // Periksa koneksi
 if (!$koneksi) {
