@@ -38,7 +38,7 @@
     <title>Form login</title>
     <style>
         body {
-            background-image: url("/DeteksiPerlintasan/img/JPL.jpg");
+            background-image: url("/img/JPL.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             font-family: Arial, sans-serif;
