@@ -1,14 +1,5 @@
 <?php
-    $host = "gateway01.us-west-2.prod.aws.tidbcloud.com";
-    $port = "4000";
-    $user = "23deaNrZSzmtKhb.root";
-    $password = "nuJVkqoA8Tyktxqb";
-    $database = "test";
-
-    $conn = mysqli_connect($host, $user, $password, $database, $port);
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
-}
+include "../service/database.php";
 
 $nomor_jpl = $_POST['nomor_jpl'];
 $waktu = $_POST['waktu'];
