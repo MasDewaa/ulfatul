@@ -1,22 +1,22 @@
 <?php 
-    include "../service/database.php";
-   //baca data dari esp32
-   $v1 = $_GET['v1'];
-   $v2 = $_GET['v2'];
-   $v3 = $_GET['v3'];
-   $current = $_GET['current'];
+include "../service/database.php";
 
-    //auto increment = 1
-    mysqli_query($db, "ALTER TABLE tb_jpl01 AUTO_INCREMENT=1");
+// Baca dan aman kan input
+$v1 = mysqli_real_escape_string($db, $_GET['v1']);
+$v2 = mysqli_real_escape_string($db, $_GET['v2']);
+$v3 = mysqli_real_escape_string($db, $_GET['v3']);
+$current = mysqli_real_escape_string($db, $_GET['current']);
 
-    //simpan data dari sensor ke tb_jpl01
-    $simpan = mysqli_query($db, "insert into tb_jpl01(Baterei , Motor1 , Motor2 , Arus)values('$v1', '$v2' ,'$v3' , '$current')");
+// Simpan data ke tabel (tidak reset AUTO_INCREMENT)
+$simpan = mysqli_query($db, "
+    INSERT INTO tb_jpl01 (Baterei, Motor1, Motor2, Arus)
+    VALUES ('$v1', '$v2', '$v3', '$current')
+");
 
-    //uji ketika data tersimpan
-    if($simpan)
-        echo "Berhasil dikirim";
-    else
-        echo "data gagal terkirim";
-
-
+// Respon
+if ($simpan) {
+    echo "Berhasil dikirim";
+} else {
+    echo "Data gagal terkirim: " . mysqli_error($db);
+}
 ?>
