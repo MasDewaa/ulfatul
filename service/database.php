@@ -1,16 +1,14 @@
 <?php
+$host = "sgp.domcloud.co";
+$port = 3306;
+$user = "monitoringjpl";
+$password = "fR(5t61ieXG45g(VW-"; // Ganti sesuai di dashboard
+$database = "monitoringjpl_db"; // Ganti sesuai nama database kamu
 
-    $server = "gateway01.us-west-2.prod.aws.tidbcloud.com";
-    $port = "4000";
-    $user = "23deaNrZSzmtKhb.root";
-    $password = "nuJVkqoA8Tyktxqb";
-    $db_name = "test";
+// Buat koneksi
+$db = mysqli_connect($host, $user, $password, $database, $port);
 
-    $db = mysqli_connect($server, $user, $password, $db_name, $port);
-
-    if(mysqli_connect_error()){
-        echo "Koneksi database rusak: " . mysqli_connect_error();
-        die("Error!");
-    }
-
+if ($db->connect_error) {
+    die("Koneksi database gagal: " . $db->connect_error);
+}
 ?>
