@@ -269,8 +269,8 @@ mysqli_close($db);
 </div>
 
 <div class="text-center">
-    <img src="/DeteksiPerlintasan/img/PPI.png" class="logo-img" alt="Logo PPI" style="margin-top: 10px;" />
-    <img src="/DeteksiPerlintasan/img/KAI.png" class="logo-img" alt="Logo KAI" style="margin-top: 10px;" />
+    <img src="/img/ppi.png" class="logo-img" alt="Logo PPI" style="margin-top: 10px;" />
+    <img src="/img/KAI.png" class="logo-img" alt="Logo KAI" style="margin-top: 10px;" />
     <h2 class="mt-3">JPLE 01 PD-PLA</h2>
 </div>
 
