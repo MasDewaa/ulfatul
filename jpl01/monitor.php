@@ -207,9 +207,9 @@ mysqli_close($db);
             const bat = parseFloat(document.getElementById("Baterei").innerText) || 0;
 
             updateIndicatorColor("Arus", arus, [0, 4.9], [5, 6]);
-            updateIndicatorColor("Motor1", motor1, [24, 28.9], [21, 23.9]);
-            updateIndicatorColor("Motor2", motor2, [24, 28.9], [21, 23.9]);
-            updateIndicatorColor("Baterei", bat, [24, 28.9], [21, 23.9]);
+            updateIndicatorColor("Motor1", motor1, [10.8, 14.2], [10, 10.7]);
+            updateIndicatorColor("Motor2", motor2, [10.8, 14.2], [10, 10.7]);
+            updateIndicatorColor("Baterei", bat, [10.8, 14.2], [10, 10.7]);
 
             updateKesimpulan();
         }
