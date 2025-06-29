@@ -207,9 +207,9 @@ mysqli_close($db);
             const bat = parseFloat(document.getElementById("Baterei").innerText) || 0;
 
             updateIndicatorColor("Arus", arus, [0, 4.9], [5, 6]);
-            updateIndicatorColor("Motor1", motor1, [10.8, 14.2], [10, 10.7]);
-            updateIndicatorColor("Motor2", motor2, [10.8, 14.2], [10, 10.7]);
-            updateIndicatorColor("Baterei", bat, [10.8, 14.2], [10, 10.7]);
+            updateIndicatorColor("Motor1", motor1, [10.8, 14.5], [10, 10.7]);
+            updateIndicatorColor("Motor2", motor2, [10.8, 14.5], [10, 10.7]);
+            updateIndicatorColor("Baterei", bat, [10.8, 14.5], [10, 10.7]);
 
             updateKesimpulan();
         }
@@ -309,15 +309,15 @@ mysqli_close($db);
     <div class="d-flex flex-column align-items-start mx-auto" style="max-width: 700px; gap: 15px;">
         <div class="d-flex align-items-center">
             <div style="width: 30px; height: 30px; background-color: red; border-radius: 5px; margin-right: 10px;"></div>
-            <span style="font-size: 18px;"><strong>Status:</strong> Indikasi Gangguan — Range Arus 0–1 / 7–10 Ampere, Range Tegangan 0–20,9 Volt</span>
+            <span style="font-size: 18px;"><strong>Status:</strong> Indikasi Gangguan â€” Range Arus 0â€“1 / 7â€“10 Ampere, Range Tegangan 0â€“10 Volt</span>
         </div>
         <div class="d-flex align-items-center">
             <div style="width: 30px; height: 30px; background-color: yellow; border-radius: 5px; margin-right: 10px; border: 1px solid #aaa;"></div>
-            <span style="font-size: 18px;"><strong>Status:</strong> Batas Aman — Range Arus 1,1–2 Ampere, Range Tegangan 21–23,9 Volt</span>
+            <span style="font-size: 18px;"><strong>Status:</strong> Batas Aman â€” Range Arus 1,1â€“2 Ampere, Range Tegangan 10,1â€“10,7 Volt</span>
         </div>
         <div class="d-flex align-items-center">
             <div style="width: 30px; height: 30px; background-color: green; border-radius: 5px; margin-right: 10px;"></div>
-            <span style="font-size: 18px;"><strong>Status:</strong> Aman — Range Arus 4–6 Ampere, Range Tegangan 24–28,9 Volt</span>
+            <span style="font-size: 18px;"><strong>Status:</strong> Aman â€” Range Arus 4â€“6 Ampere, Range Tegangan 10,8â€“14,5 Volt</span>
         </div>
     </div>
 </div>
