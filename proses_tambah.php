@@ -10,12 +10,11 @@ $keterangan = $_POST['keterangan'];
 $sql = "INSERT INTO tb_kerusakan (`Nomor JPL`, `Waktu`, `Deskripsi Kerusakan`, `Nama Petugas`, `Keterangan`) 
         VALUES ('$nomor_jpl', '$waktu', '$deskripsi', '$petugas', '$keterangan')";
 
-if (mysqli_query($conn, $sql)) {
+if (mysqli_query($db, $sql)) {
     header("Location: kerusakan.php");
     exit();
 } else {
-    echo "Gagal menyimpan data: " . mysqli_error($conn);
+    echo "Gagal menyimpan data: " . mysqli_error($db);
 }
 
-mysqli_close($conn);
-?>
+mysqli_close($db);
