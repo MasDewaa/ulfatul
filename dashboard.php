@@ -94,6 +94,8 @@
   <!-- Coulum start -->
   <div class="row text-center align-items center mt-4">
     <div class="col-12 " style="font-family: Arial, sans-serif; color: #333;">
+    <img src="/img/kemenhub.png" alt="Logo Kemenhub" class="img-fluid" style="width: 150px; height: auto;"/>
+    <img src="/img/bpsdmp.png" alt="Logo BPSDMP" class="img-fluid" style="width: 150px; height: auto;"/>
     <img src="/img/ppi.png" alt="PPI Logo" class="img-fluid" style="width: 150px; height: auto;"/>
     <img src="/img/KAI.png" alt="KAI Logo" class="img-fluid"style="width: 150px; height: auto;"/> 
     <h2 class="mt-2">Website Monitoring JPL DIVRE II</h2>

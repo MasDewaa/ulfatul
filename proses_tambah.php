@@ -1,5 +1,5 @@
 <?php
-include "../service/database.php";
+include "service/database.php";
 
 $nomor_jpl = $_POST['nomor_jpl'];
 $waktu = $_POST['waktu'];

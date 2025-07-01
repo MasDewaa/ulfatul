@@ -72,6 +72,8 @@
     
     <main>
         <div class="center-column">
+            <img src="/img/kemenhub.png" alt="Logo Kemenhub" class="img-fluid" style="width: 150px; height: auto;"/>
+            <img src="/img/bpsdmp.png" alt="Logo BPSDMP" class="img-fluid" style="width: 150px; height: auto;"/>
             <img src="/img/ppi.png" alt="PPI Logo" class="img-fluid" style="width: 150px; height: auto;"/>
             <img src="/img/KAI.png" alt="KAI Logo" class="img-fluid"style="width: 150px; height: auto;"/> 
             <h1>Selamat Datang!</h1>
