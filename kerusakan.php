@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "/services/database.php";
+include __DIR__ . "/service/database.php";
 
 $sql = "SELECT * FROM tb_kerusakan ORDER BY Waktu DESC";
 $result = mysqli_query($db, $sql);

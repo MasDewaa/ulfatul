@@ -269,8 +269,10 @@ mysqli_close($db);
 </div>
 
 <div class="text-center">
-    <img src="/img/ppi.png" class="logo-img" alt="Logo PPI" style="margin-top: 10px;" />
-    <img src="/img/KAI.png" class="logo-img" alt="Logo KAI" style="margin-top: 10px;" />
+    <img src="../img/kemenhub.png" class="logo-img" alt="Logo Kemenhub" style="margin-top: 10px;" />
+    <img src="../img/bpsdmp.png" class="logo-img" alt="Logo BPSDMP" style="margin-top: 10px;" />
+    <img src="../img/PPI.png" class="logo-img" alt="Logo PPI" style="margin-top: 10px;" />
+    <img src="../img/KAI.png" class="logo-img" alt="Logo KAI" style="margin-top: 10px;" />
     <h2 class="mt-3">JPLE 01 PD-PLA</h2>
 </div>
 
@@ -309,17 +311,17 @@ mysqli_close($db);
     <div class="d-flex flex-column align-items-start mx-auto" style="max-width: 700px; gap: 15px;">
         <div class="d-flex align-items-center">
             <div style="width: 30px; height: 30px; background-color: red; border-radius: 5px; margin-right: 10px;"></div>
-            <span style="font-size: 18px;"><strong>Status:</strong> Indikasi Gangguan â€” Range Arus 0â€“1 / 7â€“10 Ampere, Range Tegangan 0â€“10 Volt</span>
+            <span style="font-size: 18px;"><strong>Status:</strong> Indikasi Gangguan </span>
         </div>
         <div class="d-flex align-items-center">
             <div style="width: 30px; height: 30px; background-color: yellow; border-radius: 5px; margin-right: 10px; border: 1px solid #aaa;"></div>
-            <span style="font-size: 18px;"><strong>Status:</strong> Batas Aman â€” Range Arus 1,1â€“2 Ampere, Range Tegangan 10,1â€“10,7 Volt</span>
+            <span style="font-size: 18px;"><strong>Status:</strong> Batas Aman </span>
         </div>
         <div class="d-flex align-items-center">
             <div style="width: 30px; height: 30px; background-color: green; border-radius: 5px; margin-right: 10px;"></div>
-            <span style="font-size: 18px;"><strong>Status:</strong> Aman â€” Range Arus 4â€“6 Ampere, Range Tegangan 10,8â€“14,5 Volt</span>
+            <span style="font-size: 18px;"><strong>Status:</strong> Aman </span>
         </div>
-    </div>
+    </div>
 </div>
 
 

@@ -10,11 +10,11 @@
         <h1 style="color: #333; margin-bottom: 20px;">Daftar JPL</h1>
         <div id="toggle-items" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-bottom: 10px; font-size: 1.1em; display: inline-block;">Tampilkan Pilihan &#9660;</div> <ul id="item-list" style="list-style: none; padding: 0; margin: 0; margin-top: 15px; display: none;">
             <li style="margin-bottom: 10px;"><a href="jpl01/monitor.php" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">JPL 01 PD-PLA</a></li>
-            <li style="margin-bottom: 10px;"><a href="monitor_jaringan.html" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">Monitoring Jaringan</a></li>
-            <li style="margin-bottom: 10px;"><a href="monitor_aplikasi.html" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">Monitoring Aplikasi</a></li>
-            <li style="margin-bottom: 10px;"><a href="monitor_database.html" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">Monitoring Database</a></li>
+            <li style="margin-bottom: 10px;"><a href="monitor_jaringan.html" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">JPL 02 PD-PLA</a></li>
+            <li style="margin-bottom: 10px;"><a href="monitor_aplikasi.html" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">JPL 03 PD-PLA</a></li>
+            <li style="margin-bottom: 10px;"><a href="monitor_database.html" style="display: block; padding: 12px 20px; background-color: #e9ecef; color: #333; text-decoration: none; border-radius: 5px;">JPL 04 PD-PLA</a></li>
         </ul>
-    </div>
+    </div>
 
     <script>
         const toggleButton = document.getElementById('toggle-items');
