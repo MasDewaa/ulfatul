@@ -72,7 +72,7 @@
     
     <main>
         <div class="center-column">
-            <img src="/img/PPI.png" alt="PPI Logo" class="img-fluid" style="width: 150px; height: auto;"/>
+            <img src="/img/ppi.png" alt="PPI Logo" class="img-fluid" style="width: 150px; height: auto;"/>
             <img src="/img/KAI.png" alt="KAI Logo" class="img-fluid"style="width: 150px; height: auto;"/> 
             <h1>Selamat Datang!</h1>
             <p>Halo,Ini merupakan halaman index website monitoring JPL</p>
