@@ -28,7 +28,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="DaftarJPL/index.php">Daftar JPL</a></li>
-            <li><a class="dropdown-item" href="https://earth.google.com/earth/d/11M-Esgm-oZZu1n46caJ0ZCGJUBZhn6Cr?usp=sharing">Peta Lintas</a></li>
+            <li><a class="dropdown-item" href="https://earth.google.com/earth/d/11M-Esgm-oZZu1n46caJ0ZCGJUBZhn6Cr?usp=sharing" target="_blank" rel="noopener noreferrer">Peta Lintas</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="kerusakan.php">Daftar Kerusakan JPL</a></li>
           </ul>

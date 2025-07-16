@@ -100,7 +100,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="DaftarJPL/index.php">Daftar JPL</a></li>
-            <li><a class="dropdown-item" href="https://earth.google.com/earth/d/11M-Esgm-oZZu1n46caJ0ZCGJUBZhn6Cr?usp=sharing">Peta Lintas</a></li>
+            <li><a class="dropdown-item" href="https://earth.google.com/earth/d/11M-Esgm-oZZu1n46caJ0ZCGJUBZhn6Cr?usp=sharing" target="_blank" rel="noopener noreferrer">Peta Lintas</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="kerusakan.php">Daftar Kerusakan JPL</a></li>
           </ul>
@@ -149,5 +149,8 @@
             }
         });
     </script>
+    <!-- Card end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
