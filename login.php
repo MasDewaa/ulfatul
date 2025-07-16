@@ -131,7 +131,6 @@
             <h3>Silahkan Login</h3>
             <div>
                 <a href="index.php">Home</a> 
-                <a href="register.php">Register</a> 
             </div>
         </header>
         

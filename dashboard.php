@@ -28,13 +28,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="DaftarJPL/index.php">Daftar JPL</a></li>
-            <li><a class="dropdown-item" href="PetaLintas/index.php">Peta Lintas</a></li>
+            <li><a class="dropdown-item" href="https://earth.google.com/earth/d/11M-Esgm-oZZu1n46caJ0ZCGJUBZhn6Cr?usp=sharing">Peta Lintas</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="kerusakan.php">Daftar Kerusakan JPL</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Struktur Organisasi</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -99,7 +96,7 @@
     <img src="/img/ppi.png" alt="PPI Logo" class="img-fluid" style="width: 150px; height: auto;"/>
     <img src="/img/KAI.png" alt="KAI Logo" class="img-fluid"style="width: 150px; height: auto;"/> 
     <h2 class="mt-2">Website Monitoring JPL DIVRE II</h2>
-    <p style="font-style: italic"> created by <span style="color: red">@Resort Sintel PD</span></p>
+    <p style="font-style: italic"> created by <span style="color: red">@Ulfatul Rahmad</span></p>
     </div>
   </div>
   <!-- Coulum end -->
@@ -109,18 +106,18 @@
   <div class="col-sm-6 mt-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Grafik Pemantauan</h5>
-        <p class="card-text">Berisi Halaman menampilkan grafik nilai arus dan tegangan pada pintu perlintasan dalam satu periode</p>
-        <a href="grafikmonitoring.php" class="btn btn-primary">Selengkapnya</a>
+        <h5 class="card-title">Halaman Monitoring</h5>
+        <p class="card-text">Berisi Halaman monitoring JPL</p>
+        <a href="monitoring.php" class="btn btn-primary">Selengkapnya</a>
       </div>
     </div>
   </div>
   <div class="col-sm-6 mt-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Notifikasi Kerusakan</h5>
-        <p class="card-text">Penyimpanan terkait nontifikasi terkait anomali arus dan teganangan pintu perlintasan</p>
-        <a href="#" class="btn btn-primary">Selengkapnya</a>
+        <h5 class="card-title">Daftar Kerusakan JPL</h5>
+        <p class="card-text">Berisi Daftar Kerusakan JPL</p>
+        <a href="kerusakan.php" class="btn btn-primary">Selengkapnya</a>
       </div>
     </div>
   </div>
@@ -129,7 +126,7 @@
       <div class="card-body">
         <h5 class="card-title">Lembar P3-STE</h5>
         <p class="card-text">Berisi pedoman perawatan dan pemeriksaan pintu perlintasan</p>
-        <a href="#" class="btn btn-primary">Selengkapnya</a>
+        <a href="assets/Perawatan pintu perlintasan.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
       </div>
     </div>
   </div>
@@ -138,7 +135,7 @@
       <div class="card-body">
         <h5 class="card-title">Wiring Diagram JPL</h5>
         <p class="card-text">Daftar Wiring diagram JPL Divre II</p>
-        <a href="#" class="btn btn-primary">Download</a>
+        <a href="assets/wiring jpl.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Selengkapnya</a>
       </div>
     </div>
   </div>
