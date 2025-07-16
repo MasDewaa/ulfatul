@@ -79,8 +79,6 @@
             <h1>Selamat Datang!</h1>
             <p>Halo,Ini merupakan halaman index website monitoring JPL</p>
             <p>
-                <a href="index.php">Home</a> |
-                <a href="register.php">Register</a> |
                 <a href="login.php">Login</a>
             </p>
         </div>
